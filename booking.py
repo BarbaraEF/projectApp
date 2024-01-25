@@ -1,3 +1,6 @@
+from functools import reduce
+
+
 class Booking:
     def __init__(self, numero, name, age, service, guests, amount):
         self.numero = int(numero)
@@ -31,6 +34,7 @@ class Booking:
     def get_amount(self):
         return self.amount
 
+
     def _str_(self):
         return "{},{},{},{},{},{}".format(self.numero, self.name, self.age, self.service, self.guests, self.amount)
 
@@ -56,6 +60,21 @@ def show_bookings(list_booking):
         # noinspection PyProtectedMember
         print(booking._screen_())
 
+def sumServices(array_bookings, service):
+    vector = list()
+    for booking in array_bookings:
+        if booking.get_service() == service:
+            vector.append(booking.get_amount())
+    return reduce((lambda x,y:x+y),vector) if vector else 0
+
+def sumAmountServices(array_bookings):
+    dicSum = dict()
+    for i in range(len(array_bookings[0].about_service)):
+       dicSum[i]=sumServices(array_bookings,i)
+    print(dicSum)
+    print(max(dicSum))
+
 
 array = file_to_bookings()
 show_bookings(array)
+sumAmountServices(array)
