@@ -102,20 +102,20 @@ class BookingManager():
         return array
 
     def agregar_reserva(self, array_bookings):
-        # Solicitar el número de reserva
-        numero = input("Ingresa el número de reserva: ")
+        # Ingreso id reserva
+        numero = input("Enter the booking code: ")
 
-        # Solicitar el nombre de reserva
-        name = input("Ingresa el nombre de reserva: ")
-        age = input("Ingresa age: ")
-        about_service = input("Ingresa servicio ")
-        guests = input("Ingresa guest: ")
-        amount = input("Ingresa amount")
+        # Solicitar el nombre de reserva, edad, servicio etc
+        name = input("Name: ")
+        age = input("Age: ")
+        about_service = input("Service: ")
+        guests = input("Guest: ")
+        amount = input("Amount: ")
 
         num_exist = [booking.numero for booking in array_bookings]
         while numero in num_exist:
-            print("La fecha ya existe. Por favor, ingresa una fecha única.")
-            numero = input("Ingresa la fecha de la reserva (dd-mm-aaaa): ")
+            print("Number must be unique.")
+            numero = input("Enter the correct number: ")
         new_booking = Booking(numero, name, age, about_service,guests, amount)
         array_bookings.append(new_booking)
         with open('booking.csv', mode='a', newline='') as file:

@@ -38,7 +38,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.booking.executor": "Run",
+    "Python.booking.executor": "Debug",
     "Python.classes.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -78,7 +78,7 @@
       <workItem from="1706229168280" duration="1734000" />
       <workItem from="1706233261292" duration="1608000" />
       <workItem from="1706277609928" duration="6000" />
-      <workItem from="1706293358704" duration="8746000" />
+      <workItem from="1706293358704" duration="9650000" />
     </task>
     <servers />
   </component>
@@ -108,7 +108,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/project_py_App_reserva$booking.coverage" NAME="booking Coverage Results" MODIFIED="1706302477783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project_py_App_reserva$booking.coverage" NAME="booking Coverage Results" MODIFIED="1706303727238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project_py_App_reserva$classes.coverage" NAME="classes Coverage Results" MODIFIED="1706123389510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
