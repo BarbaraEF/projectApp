@@ -60,6 +60,7 @@ def show_bookings(list_booking):
         # noinspection PyProtectedMember
         print(booking._screen_())
 
+#for each service returns the max amount and which service repeats more
 def sumServices(array_bookings, service):
     vector = list()
     for booking in array_bookings:
@@ -70,7 +71,7 @@ def sumServices(array_bookings, service):
 def sumAmountServices(array_bookings):
     dicSum = dict()
     for i in range(len(array_bookings[0].about_service)):
-       dicSum[i]=sumServices(array_bookings,i)
+        dicSum[i]=sumServices(array_bookings,i)
     print(dicSum)
     print(max(dicSum))
 
